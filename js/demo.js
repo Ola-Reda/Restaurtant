@@ -1,47 +1,30 @@
-$(document).ready(function() {
-    //nav 
-    $(".nav-link").hover(function() {
-        $(this).addClass("hvr-underline-from-left");
-    });
+//scroll top 
+let btnScroll = document.querySelector(".scroll-top");
 
-
-
-
-
-    //specialmenu
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 25,
-        autoplay: true,
-        autoplayTimeout: 1000,
-        autoplayHoverPause: false,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: true
-            },
-            600: {
-                items: 3,
-                nav: false
-            },
-            1000: {
-                items: 3,
-                nav: true,
-                loop: false
-            }
-        }
+btnScroll.addEventListener('click',function(){
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
     })
-
-
-
-    //reserve
-    $('select').niceSelect();
-
-
-
-
-
-
-
 });
+
+window.onscroll =function () {
+    if(window.scrollY >= 400 ){
+        btnScroll.classList.add('active');
+    }else{
+        btnScroll.classList.remove('active');
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
