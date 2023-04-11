@@ -1,3 +1,22 @@
+//loader
+let loader = document.querySelector(".loader");
+let load = document.querySelector(".load");
+let body = document.querySelector("body");
+window.addEventListener("load", ()=> {
+    console.log("ola");
+    body.style.overflow = "auto";
+    loader.classList.add("loader-hidden");
+    body.removeChild("loader")
+    // load.style.display = "none";
+    // loader.style.display = "none";
+})
+// window.onload = function() {
+//     console.log("ola");
+//     body.style.overflow = "auto"
+//     load.style.display = "none";
+//     loader.style.display = "none";
+// }
+
 let swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 25,
