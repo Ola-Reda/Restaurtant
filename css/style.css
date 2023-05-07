@@ -24,7 +24,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all .7s ease-in;
+    transition: all .6s ease-in;
 }
 .load {
     background-image: url(../images/loader-animation.gif);
@@ -32,7 +32,7 @@ body {
     background-size: cover;
     width: 300px;
     height: 300px;
-    transition: all .7s ease-in;
+    transition: all .6s ease-in;
 }
 .loader-hidden {
     opacity: 0;
@@ -49,10 +49,7 @@ header {
 }
 /*start nav*/
 header nav li.active .nav-link {
-    color: #e75b1e;
-}
-header nav li.active .nav-link:hover {
-    color: #e75b1e;
+    color: var(--main-color);
 }
 header nav .nav-link {
     color: var(--main-color-alt);
@@ -74,16 +71,23 @@ header nav .nav-link::after {
     left: 8px;
     transition: all .3s ease-in;
 }
+header nav li.active .nav-link::after {
+    background-color: var(--main-color);
+    width: 75%;
+}
 header nav .nav-link:hover {
     color: var(--main-color-alt);
 }
 header nav .nav-link:hover::after {
     width: 80%;
 }
-.navbar .navbar-toggler span {
-    background-color: var(--main-color);
-    border-color: none;
-    font-size: 30px;
+.navbar .navbar-toggler {
+    color: var(--main-color);
+    font-size: 24px;
+    border: 1px solid var(--main-color);
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
 }
 /*end nav*/
 /*end header*/
@@ -101,8 +105,20 @@ h1, h2, h3 {
     font-family: 'Pattaya', sans-serif;
 }
 /*end for all heading*/
-/*for all*/
-.animate::before, .animate::after {
+/*for all button*/
+.button {
+    position: relative;
+    background-color: var(--main-color);
+    color: var(--main-color-alt);
+    border: 3px solid var(--main-color);
+    text-decoration: none;
+}
+.button:hover {
+    background: transparent;
+    color: var(--main-color-alt);
+    border: 3px solid var(--main-color);
+}
+.button::before, .button::after {
     content: "";
     position: absolute;
     bottom: -1px;
@@ -111,21 +127,20 @@ h1, h2, h3 {
     height: 4px;
     transition: all .3s ease-in;
 }
-.animate::before {
-    left: 40%;
-    
-}
-.animate::after {
+.button::before {
     left: 40%;
 }
-.animate:hover::before {
+.button::after {
+    left: 40%;
+}
+.button:hover::before {
     width: 50%;
 }
-.animate:hover::after {
+.button:hover::after {
     left: 0%;
     width: 100%;
 }
-/*for all*/
+/*for all button*/
 /*start main*/
 main {
     background: url(../images/banner.jpg) fixed center;
@@ -168,42 +183,11 @@ main .info p {
     margin-bottom: 45px;
 }
 main .info a {
-    background-color: var(--main-color);
-    color: var(--main-color-alt);
-    border: 3px solid var(--main-color);
     font-size: 20px;
     font-weight: 700;
     padding: 14px 40px;
     transition: all .3s ease-in;
-    text-decoration: none;
-    position: relative;
 }
-/* main .info a::before, main .info a::after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    background-color: var(--main-color);
-    width: 40px;
-    height: 4px;
-    transition: all .3s ease-in;
-} */
-/* main .info a::before {
-    left: 40%;
-    
-}
-main .info a::after {
-    left: 40%;
-} */
-main .info a:hover {
-    background-color: transparent;
-}
-/* main .info a:hover::before {
-    width: 50%;
-}
-main .info a:hover::after {
-    left: 0%;
-    width: 100%;
-} */
 main .mouse {
     position: relative;
     width: 60px;
@@ -581,18 +565,10 @@ main .mouse::after {
     color: #ccc;
 }
 .blog .blog-btn a {
-    color: var(--main-color-alt);
-    background-color: var(--main-color);
-    border: 3px solid var(--main-color);
     font-size: 18px;
     font-weight: bold;
     padding: 16px 40px;
     transition: all 0.3s ease-in;
-    text-decoration: none;
-    position: relative;
-}
-.blog .blog-btn a:hover {
-    background: transparent;
 }
 /*end section blog*/
 /*start section Pricing*/
@@ -660,18 +636,11 @@ main .mouse::after {
 }
 .Pricing .panel-footer a {
     display: block;
-    color: var(--main-color-alt);
-    background-color: var(--main-color);
-    border: 3px solid var(--main-color);
-    text-decoration: none;
     font-size: 18px;
     padding: 10px 10px;
     transition: all 0.5s ease-in-out;
-    position: relative;
 }
 .Pricing .panel-footer a:hover {
-    border: 3px solid var(--main-color);
-    background: transparent;
     color: black;
 }
 /*end section Pricing*/
@@ -700,19 +669,13 @@ main .mouse::after {
     cursor: pointer;
 }
 .reservaions .form-button button {
-    color: var(--main-color-alt);
-    background-color: var(--main-color);
-    border: 3px solid var(--main-color);
     font-size: 18px;
     font-weight: 700;
     padding: 10px 40px;
     transition: all 0.5s ease-in-out;
     margin-top: 30px;
-    position: relative;
 }
 .reservaions .form-button button:hover {
-    border: 3px solid #e75b1e;
-    background: transparent;
     color: black;
 }
 /*end section reservaions*/
