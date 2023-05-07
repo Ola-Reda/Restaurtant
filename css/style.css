@@ -10,6 +10,35 @@ body {
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
 }
+/*section loader*/
+.loader {
+    background-color: var(--main-color-alt);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .7s ease-in;
+}
+.load {
+    background-image: url(../images/loader-animation.gif);
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    transition: all .7s ease-in;
+}
+.loader-hidden {
+    opacity: 0;
+    z-index: -11;
+}
+/*section loader*/
 /*start header*/
 header {
     position: absolute;
@@ -18,33 +47,6 @@ header {
     left: 0;
     z-index: 11;
 }
-/*section load*/
-.loader {
-    background-color: white;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .4s;
-}
-.load {
-    background-image: url(../images/loader-animation.gif);
-    background-position: center;
-    width: 200px;
-    height: 200px;
-    transition: all .8s;
-}
-.loader-hidden {
-    opacity: 0;
-}
-/*section load*/
 /*start nav*/
 header nav li.active .nav-link {
     color: #e75b1e;
