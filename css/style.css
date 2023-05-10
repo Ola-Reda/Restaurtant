@@ -55,7 +55,7 @@ header nav .nav-link {
     color: var(--main-color-alt);
     font-size: 14px;
     margin-left: 10px;
-    padding-top: 14px;
+    padding-top: 20px;
     font-weight: 500;
     letter-spacing: .6px;
     text-transform: uppercase;
@@ -73,7 +73,7 @@ header nav .nav-link::after {
 }
 header nav li.active .nav-link::after {
     background-color: var(--main-color);
-    width: 75%;
+    width: 80%;
 }
 header nav .nav-link:hover {
     color: var(--main-color-alt);
@@ -88,6 +88,21 @@ header nav .nav-link:hover::after {
 }
 .navbar .navbar-toggler:focus {
     box-shadow: none;
+}
+@media(max-width:992px) {
+    header .navbar .navbar-collapse {
+        background: #202020;
+        padding: 10px
+    }
+    header nav .nav-link::after {
+        left: 0px !important;
+    }
+    header nav li.active .nav-link::after {
+        width: 100%;
+    }
+    header nav .nav-link:hover::after {
+        width: 100%;
+    }
 }
 /*end nav*/
 /*end header*/
