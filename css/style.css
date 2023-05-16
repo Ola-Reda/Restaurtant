@@ -40,6 +40,7 @@ body {
 }
 /*section loader*/
 /*start header*/
+/*start nav*/
 header {
     position: absolute;
     width: 100%;
@@ -47,7 +48,21 @@ header {
     left: 0;
     z-index: 11;
 }
-/*start nav*/
+.fixed-nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    padding: 8px 0 0 0;
+    background-color: #202020;
+    transition: .3s ease-in;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.fixed-nav .navbar-brand img {
+    width: 150px;
+    padding: 8px 0;
+}
 header nav li.active .nav-link {
     color: var(--main-color);
 }
@@ -67,7 +82,7 @@ header nav .nav-link::after {
     width: 0px;
     height: 3px;
     background-color: #b5b5b5;
-    bottom: -6px;
+    bottom: -11px;
     left: 8px;
     transition: all .3s ease-in;
 }
@@ -94,8 +109,12 @@ header nav .nav-link:hover::after {
         background: #202020;
         padding: 10px
     }
+    header nav .nav-link {
+        margin-top: 10px;
+    }
     header nav .nav-link::after {
         left: 0px !important;
+        bottom: -4px;
     }
     header nav li.active .nav-link::after {
         width: 100%;
@@ -565,13 +584,20 @@ main .mouse::after {
     display: flex;
     align-items: center;
 }
+.blog .blog-body .blog-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 .blog .blog-body .blog-box p {
     font-size: 12px;
     color: #ccc;
 }
 .blog .blog-body .blog-box h4 {
     font-size: 22px;
-    padding: 12px 50px 13px 50px;
+    padding: 24px;
+    margin-bottom: 20px;
     border-top: 1px solid #eaeaea;
     border-bottom: 1px solid #eaeaea;
 }
@@ -584,6 +610,12 @@ main .mouse::after {
     font-weight: bold;
     padding: 16px 40px;
     transition: all 0.3s ease-in;
+}
+@media(max-width: 992px) {
+    .blog .blog-body .blog-box h4 {
+        font-size: 14px;
+        padding: 24px;
+    }
 }
 /*end section blog*/
 /*start section Pricing*/

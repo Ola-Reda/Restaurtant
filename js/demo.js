@@ -8,6 +8,16 @@ window.addEventListener("load", () => {
     load.classList.add("loader-hidden");
 });
 
+//header 
+let navbar = document.querySelector(".navbar");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add("fixed-nav");
+    } else {
+        navbar.classList.remove("fixed-nav");
+    }
+});
+
 //swiper
 let swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
@@ -47,15 +57,3 @@ window.onscroll =function () {
         btnScroll.classList.remove('active');
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
