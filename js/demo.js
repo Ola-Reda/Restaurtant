@@ -39,10 +39,23 @@ let swiper = new Swiper(".mySwiper", {
     },
 });
 
+
+//menu
+let tabs = document.querySelectorAll(".taps li");
+tabs.forEach(tab=> {
+    tab.addEventListener("click", () => {
+        tabs.forEach(tab=> {
+            tab.classList.remove("active");
+        })
+        tab.classList.add("active");
+    }) 
+});
+
+
 //scroll top 
 let btnScroll = document.querySelector(".scroll-top");
 
-btnScroll.addEventListener('click',function(){
+btnScroll.addEventListener('click', function() {
     window.scrollTo({
         top: 0,
         left: 0,
@@ -50,7 +63,7 @@ btnScroll.addEventListener('click',function(){
     })
 });
 
-window.onscroll =function () {
+window.onscroll = function () {
     if(window.scrollY >= 400 ){
         btnScroll.classList.add('active');
     }else{
