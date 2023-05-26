@@ -473,6 +473,13 @@ main .mouse::after {
     .menu .text p {
         font-size: 16px;
     }
+    .menu .content .box-body {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu .content .box-body .box-info {
+        flex-direction: column;
+    }
 }
 /*end section menu*/
 /*start section our team*/
