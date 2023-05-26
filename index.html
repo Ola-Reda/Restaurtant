@@ -174,30 +174,30 @@
                 </div>
                 <div class="tap-menu">
                     <ul class="row taps list-unstyled text-center">
-                        <li class="active col-sm-6 col-md-3">
+                        <li class="active col-sm-6 col-md-3" data-filter=".starters">
                             <h4>STARTERS</h4>
                             <i class="fas fa-cookie-bite fa-2x"></i>
                         </li>
-                        <li class="col-sm-6 col-md-3">
+                        <li class="col-sm-6 col-md-3" data-filter=".main-dishes">
                             <h4>MAIN DISHES</h4>
                             <i class="fas fa-utensils fa-2x"></i>
                         </li>
-                        <li class="col-sm-6 col-md-3">
+                        <li class="col-sm-6 col-md-3" data-filter=".deserts">
                             <h4>DESERTS</h4>
                             <i class="fas fa-stroopwafel fa-2x"></i>
                         </li>
-                        <li class="col-sm-6 col-md-3">
+                        <li class="col-sm-6 col-md-3" data-filter=".drinks">
                             <h4>DRINKS</h4>
                             <i class="fas fa-glass-cheers fa-2x"></i>
                         </li>
                     </ul>
-                    <div class="row content">
-                        <div class="col-md-6">
-                            <div class="box">
+                    <div class="row content pt-1">
+                        <div class="col-md-6 box starters">
+                            <div class="box-body mb-2">
                                 <img src="images/menu-item-thumbnail-01.jpg" class="rounded-circle" alt="image">
                                 <div class="box-info">
-                                    <div>
-                                        <h6 class="title">GARLIC BREAD</h6>
+                                    <div class="box-text px-3">
+                                        <h5 class="title">GARLIC BREAD</h5>
                                         <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis eleifend dapibus.</p>
                                     </div>
                                     <div>
@@ -206,12 +206,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="box">
+                        <div class="col-md-6 box starters">
+                            <div class="box-body mb-2">
                                 <img src="images/menu-item-thumbnail-02.jpg" class="rounded-circle" alt="image">
                                 <div class="box-info">
-                                    <div>
-                                        <h6 class="title">MIXED SALAD</h6>
+                                    <div class="box-text px-3">
+                                        <h5 class="title">MIXED SALAD</h5>
                                         <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis eleifend dapibus.</p>
                                     </div>
                                     <div>
@@ -220,16 +220,142 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="box">
+                        <div class="col-md-6 box starters">
+                            <div class="box-body mb-2">
                                 <img src="images/menu-item-thumbnail-03.jpg" class="rounded-circle" alt="image">
                                 <div class="box-info">
-                                    <div>
-                                        <h6 class="title">BBQ CHICKEN WINGS</h6>
+                                    <div class="box-text px-3">
+                                        <h5 class="title">BBQ CHICKEN WINGS</h5>
                                         <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis eleifend dapibus.</p>
                                     </div>
                                     <div>
                                         <span class="price">$10</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 box main-dishes">
+                            <div class="box-body mb-2">
+                                <img src="images/menu-item-thumbnail-04.jpg" class="rounded-circle" alt="image">
+                                <div class="box-info">
+                                    <div class="box-text px-3">
+                                        <h5 class="title">MEAT FEAST PIZZA</h5>
+                                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis eleifend dapibus.</p>
+                                    </div>
+                                    <div>
+                                        <span class="price">$5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 box main-dishes">
+                            <div class="box-body mb-2">
+                                <img src="images/menu-item-thumbnail-05.jpg" class="rounded-circle" alt="image">
+                                <div class="box-info">
+                                    <div class="box-text px-3">
+                                        <h5 class="title">CHICKEN TIKKA MASALA</h5>
+                                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis eleifend dapibus.</p>
+                                    </div>
+                                    <div>
+                                        <span class="price">$15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 box main-dishes">
+                            <div class="box-body mb-2">
+                                <img src="images/menu-item-thumbnail-06.jpg" class="rounded-circle" alt="image">
+                                <div class="box-info">
+                                    <div class="box-text px-3">
+                                        <h5 class="title">SPICY MEATBALLS</h5>
+                                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis eleifend dapibus.</p>
+                                    </div>
+                                    <div>
+                                        <span class="price">$6.5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 box deserts">
+                            <div class="box-body mb-2">
+                                <img src="images/menu-item-thumbnail-07.jpg" class="rounded-circle" alt="image">
+                                <div class="box-info">
+                                    <div class="box-text px-3">
+                                        <h5 class="title">CHOCOLATE FUDGECAKE</h5>
+                                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis eleifend dapibus.</p>
+                                    </div>
+                                    <div>
+                                        <span class="price">$4.5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 box deserts">
+                            <div class="box-body mb-2">
+                                <img src="images/menu-item-thumbnail-08.jpg" class="rounded-circle" alt="image">
+                                <div class="box-info">
+                                    <div class="box-text px-3">
+                                        <h5 class="title">CHICKEN TIKKA MASALA</h5>
+                                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis eleifend dapibus.</p>
+                                    </div>
+                                    <div>
+                                        <span class="price">$9.5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 box deserts">
+                            <div class="box-body mb-2">
+                                <img src="images/menu-item-thumbnail-09.jpg" class="rounded-circle" alt="image">
+                                <div class="box-info">
+                                    <div class="box-text px-3">
+                                        <h5 class="title">CHICKEN TIKKA MASALA</h5>
+                                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis eleifend dapibus.</p>
+                                    </div>
+                                    <div>
+                                        <span class="price">$10</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 box drinks">
+                            <div class="box-body mb-2">
+                                <img src="images/menu-item-thumbnail-10.jpg" class="rounded-circle" alt="image">
+                                <div class="box-info">
+                                    <div class="box-text px-3">
+                                        <h5 class="title">MEAT FEAST PIZZA</h5>
+                                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis eleifend dapibus.</p>
+                                    </div>
+                                    <div>
+                                        <span class="price">$12.5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 box drinks">
+                            <div class="box-body mb-2">
+                                <img src="images/menu-item-thumbnail-09.jpg" class="rounded-circle" alt="image">
+                                <div class="box-info">
+                                    <div class="box-text px-3">
+                                        <h5 class="title">CHICKEN TIKKA MASALA</h5>
+                                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis eleifend dapibus.</p>
+                                    </div>
+                                    <div>
+                                        <span class="price">$9.5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 box drinks">
+                            <div class="box-body mb-2">
+                                <img src="images/menu-item-thumbnail-08.jpg" class="rounded-circle" alt="image">
+                                <div class="box-info">
+                                    <div class="box-text px-3">
+                                        <h5 class="title">CHICKEN TIKKA MASALA</h5>
+                                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis eleifend dapibus.</p>
+                                    </div>
+                                    <div>
+                                        <span class="price">$5.5</span>
                                     </div>
                                 </div>
                             </div>
@@ -576,7 +702,7 @@
         </section>
         <!--end section blog-->
         <!--start section Pricing-->
-        <section class="Pricing" id="Pricing">
+        <section class="Pricing" id="pricing">
             <div class="container text-center">
                 <div class='text m-auto mb-5'>
                     <h2 class="heading">Pricing</h2>

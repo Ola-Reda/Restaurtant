@@ -42,7 +42,14 @@ let swiper = new Swiper(".mySwiper", {
 
 //menu
 let tabs = document.querySelectorAll(".taps li");
+let boxes = document.querySelectorAll(".box");
+let activeTab = "starters";
+filter(activeTab);
+
 tabs.forEach(tab=> {
+    tab.addEventListener("click", ()=> {
+        filter(tab.dataset.filter.slice(1))
+    })
     tab.addEventListener("click", () => {
         tabs.forEach(tab=> {
             tab.classList.remove("active");
@@ -50,6 +57,18 @@ tabs.forEach(tab=> {
         tab.classList.add("active");
     }) 
 });
+
+function filter(newTab) {
+    activeTab = newTab;
+    boxes.forEach((box)=> {
+        if(box.classList.contains(activeTab)){
+            box.style.display = "block"
+        } else {
+            box.style.display = "none"
+        }
+    });
+}
+
 
 
 //scroll top 

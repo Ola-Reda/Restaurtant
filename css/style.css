@@ -152,26 +152,18 @@ h1, h2, h3 {
     color: var(--main-color-alt);
     border: 3px solid var(--main-color);
 }
-.button::before, .button::after {
+.button::after {
     content: "";
     position: absolute;
     bottom: -1px;
     background-color: var(--main-color);
-    width: 40px;
+    width: 0%;
     height: 4px;
+    left: 50%;
+    transform: translateX(-50%);
     transition: all .3s ease-in;
 }
-.button::before {
-    left: 40%;
-}
-.button::after {
-    left: 40%;
-}
-.button:hover::before {
-    width: 50%;
-}
 .button:hover::after {
-    left: 0%;
     width: 100%;
 }
 /*for all button*/
@@ -416,6 +408,9 @@ main .mouse::after {
     margin-top: 30px;
     overflow: hidden;
 }
+.menu .tap-menu .taps {
+    border-bottom: 1px solid #cccccc;
+}
 .menu .tap-menu ul li {
     padding: 10px;
     cursor: pointer;
@@ -438,29 +433,46 @@ main .mouse::after {
 .menu .tap-menu ul li svg {
     margin: 20px auto;
 }
-.menu .content .box {
+.menu .content .box-body {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 8px;
 }
-.menu .content .box img {
+.menu .content .box-body img {
     border: 10px solid white;
 }
-.menu .content .box .box-info {
+.menu .content .box-body .box-info {
     display: flex;
     align-items: center;
 }
-.menu .content .box .box-info h6 {
+.menu .content .box-body .box-info .box-text {
+    width:74%;
+}
+.menu .content .box-body .box-info h5 {
     color: var(--main-color);
     font-family: 'Pattaya', sans-serif;
 }
-.menu .content .box .box-info p {
+.menu .content .box-body .box-info p {
     color: #6b6b6b;
     font-size: 14px;
+    line-height: 1.8;
 }
-.menu .content .box .box-info span {
-    
+.menu .content .box-body .box-info span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+@media (max-width:767px) {
+    .menu .text p {
+        font-size: 16px;
+    }
 }
 /*end section menu*/
 /*start section our team*/
