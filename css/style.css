@@ -267,7 +267,7 @@ main .mouse::after {
 /*start section about*/
 .about {
     background-color: #E6E6E6;
-    padding-top: 70px;
+    padding-top: 90px;
     padding-bottom: 60px;
 }
 .about .about-info h5 {
@@ -486,7 +486,7 @@ main .mouse::after {
 .our-team {
     background: url(../images/team_bg.jpg) no-repeat fixed;
     background-size: cover;
-    padding-top: 70px;
+    padding-top: 90px;
     padding-bottom: 60px;
     position: relative;
 }
@@ -572,7 +572,7 @@ main .mouse::after {
 /*end section our team*/
 /*start section gallery*/
 .gallery {
-    padding-top: 60px;
+    padding-top: 90px;
     padding-bottom: 80px;
 }
 .gallery .text p {
@@ -645,7 +645,7 @@ main .mouse::after {
 .blog {
     background: url(../images/blog_bg.jpg) no-repeat fixed;
     background-size: cover;
-    padding-top: 60px;
+    padding-top: 90px;
     padding-bottom: 70px;
     position: relative;
 }
@@ -709,7 +709,7 @@ main .mouse::after {
 .Pricing {
     background: url(../images/full-bg.png) center no-repeat;
     background-size: cover;
-    padding-top: 70px;
+    padding-top: 90px;
     padding-bottom: 70px;
 }
 .Pricing .text {
@@ -780,7 +780,7 @@ main .mouse::after {
 /*end section Pricing*/
 /*start section reservaions*/
 .reservaions {
-    padding-top: 70px;
+    padding-top: 90px;
     padding-bottom: 80px;
 }
 .reservaions p {
@@ -817,7 +817,7 @@ main .mouse::after {
 .contact-us {
     background: url(../images/newsletter-bg.jpg) no-repeat fixed center;
     background-size: cover;
-    padding-top: 70px;
+    padding-top: 90px;
     padding-bottom: 90px;
     position: relative;
 }
