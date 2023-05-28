@@ -441,6 +441,7 @@ main .mouse::after {
 }
 .menu .content .box-body img {
     border: 10px solid white;
+    margin-bottom: 15px;
 }
 .menu .content .box-body .box-info {
     display: flex;
