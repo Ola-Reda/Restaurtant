@@ -254,7 +254,7 @@ main .mouse::after {
 }
 @media (max-width:767px) {
     main .info h1 {
-        font-size: 42px;
+        font-size: 45px;
     }
     main .info h2 {
         font-size: 26px;
@@ -432,6 +432,17 @@ main .mouse::after {
 }
 .menu .tap-menu ul li svg {
     margin: 20px auto;
+}
+.menu .content .box {
+    animation: move .7s ease-in-out;
+}
+@keyframes move {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 .menu .content .box-body {
     display: flex;
