@@ -320,11 +320,12 @@ main .mouse::after {
     font-size: 18px;
     line-height: 1.5;
 }
-.special-menu .swiper-wrapper {
+/* .special-menu .swiper-wrapper {
     margin-bottom: 60px;
-}
+} */
 .special-menu .swiper-wrapper .swiper-slide {
     border: 4px solid var(--main-color-alt);
+    margin-bottom: 70px;
 }
 .special-menu .special-box img {
     width: 100%;
